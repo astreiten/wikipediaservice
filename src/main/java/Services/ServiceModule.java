@@ -3,8 +3,14 @@ package Services;
 public class ServiceModule
 {
     private static ServiceModule instance;
+    private ExtractHelper extractHelper;
+    private Service service;
 
-    private ServiceModule() {}
+    private ServiceModule()
+    {
+        extractHelper = new ExtractHelperImpl();
+        service = new ServiceImpl(extractHelper);
+    }
 
     public static ServiceModule getInstance()
     {
@@ -17,6 +23,11 @@ public class ServiceModule
 
     public ExtractHelper getExtractHelper()
     {
-        return new ExtractHelperImpl();
+        return extractHelper;
+    }
+
+    public Service getService()
+    {
+        return service;
     }
 }
