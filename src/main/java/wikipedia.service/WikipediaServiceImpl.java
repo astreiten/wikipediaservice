@@ -1,11 +1,11 @@
-package Services;
+package wikipedia.service;
 
 import java.io.IOException;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-class ServiceImpl implements Service
+class WikipediaServiceImpl implements WikipediaService
 {
     private WikipediaAPI wikiAPI;
     private final String wikiAPIUrl="https://en.wikipedia.org/w/";

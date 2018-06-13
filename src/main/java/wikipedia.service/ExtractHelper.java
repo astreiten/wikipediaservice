@@ -1,4 +1,4 @@
-package Services;
+package wikipedia.service;
 
 public interface ExtractHelper
 {

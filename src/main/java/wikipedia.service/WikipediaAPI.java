@@ -1,4 +1,4 @@
-package Services;
+package wikipedia.service;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

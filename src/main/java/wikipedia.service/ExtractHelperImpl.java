@@ -1,4 +1,4 @@
-package Services;
+package wikipedia.service;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
