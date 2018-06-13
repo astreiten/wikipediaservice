@@ -11,7 +11,7 @@ class WikipediaServiceImpl implements WikipediaService
     private final String wikiAPIUrl="https://en.wikipedia.org/w/";
     private ExtractHelper extractHelper;
 
-    ServiceImpl(ExtractHelper extractHelper)
+    WikipediaServiceImpl(ExtractHelper extractHelper)
     {
         connectAPI();
         this.extractHelper = extractHelper;
