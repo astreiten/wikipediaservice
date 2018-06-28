@@ -21,11 +21,6 @@ public class WikipediaServiceModule
         return instance;
     }
 
-    public ExtractHelper getExtractHelper()
-    {
-        return extractHelper;
-    }
-
     public WikipediaService getService()
     {
         return wikipediaService;
